@@ -1,0 +1,22 @@
+<h2> Clientes Cadastrados</h2>
+<table class = "table table-striped">
+    <thead>
+        <tr>
+            <th>Nome</th>
+            <th> CPF/CNPJ </th>
+            <th> Opções </th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor = "let client of clients" >
+            <td> {{ client.name }} </td>
+            <td> {{ client.id }} </td>
+         
+
+            <td>
+                
+                <button (click) = "clientDetails(client.id)" class = "btn btn-info" style="margin-left: 10px"> +Info</button>
+            </td>
+        </tr>
+    </tbody>
+</table>

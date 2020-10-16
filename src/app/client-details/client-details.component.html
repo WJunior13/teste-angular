@@ -1,0 +1,19 @@
+<h3> Informações do Cliente</h3>
+<div>
+    <div>
+        <label> <b> Nome: </b></label> {{client.name}}
+    </div>
+    <div>
+        <label> <b> CPF/CNPJ: </b></label> {{client.id}}
+    </div>
+    <div>
+        <label> <b> Endereço: </b></label> {{client.address}}
+    </div>
+    <div>
+        <label> <b> Telefone: </b></label> {{client.phone}}
+    </div>
+    <div>
+        <button (click) = "updateClient(client.id)" class = "btn btn-info"> Atualizar</button>
+        <button (click) = "deleteClient(client.id)" class = "btn btn-danger" style="margin-left: 10px"> Excluir</button>
+    </div>
+</div>
